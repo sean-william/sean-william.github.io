@@ -1,0 +1,13 @@
+
+.construction:after {
+  background-color: #fdd400; /* colour of the sign */
+  border-radius: 3em;
+  content: '';
+  height: 28em;
+  left: -12em;
+  position: absolute;
+  top: 5em;
+  transform: rotate(45deg);
+  width: 28em;
+  z-index: -1;
+}
