@@ -176,6 +176,10 @@ aside {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #f05f40;
     }
+
+    .services-row > div {
+      height: 160px;
+    }
 }
 
 header {
