@@ -184,7 +184,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/Header.jpg);
     background-position: center;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -269,7 +269,7 @@ header .header-content .header-content-inner p {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
-	
+
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -495,7 +495,7 @@ fieldset[disabled] .btn-secondary.active {
 .btn-secondary .badge {
     color: #563720;
     background-color: #fff;
-	
+
 .btn {
     border: 0;
     border-radius: 300px;
