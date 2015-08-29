@@ -1,1981 +1,313 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<link href="tools/960.css" rel="stylesheet" type="text/css" />
-<link href="tools/construction.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/Clarendon_LT_Std_700.font.js"></script>
-<script type="text/javascript" src="js/construction.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1,h3', {fontFamily: 'Clarendon LT Std', hover:true})
-</script>
-<style>
-.construction {
-  animation: work .375s steps(1, start) infinite;
-  font-size: 7px; /* pixel size */
-  height: 1em;
-  margin-bottom: 37em;
-  margin-left: 50%;
-  position: relative;
-  width: 1em;
-  
-  /* Remove this is you don't care about a fallback image */
-  
-  box-shadow:
-    /* row 1 */
-    inset 0 0 0 1em,
-    1em   0,
-    2em   0,
-    3em   0,
-    /* row 2 */
-    -1em  1em,
-    0     1em,
-    1em   1em,
-    2em   1em,
-    3em   1em,
-    4em   1em,
-    /* row 3 */
-    -2em  2em,
-    -1em  2em,
-    4em   2em,
-    5em   2em,
-    /* row 4 */
-    -3em  3em,
-    -2em  3em,
-    5em   3em,
-    6em   3em,
-    /* row 5 */
-    -4em  4em,
-    -3em  4em,
-    6em   4em,
-    7em   4em,
-    /* row 6 */
-    -5em  5em,
-    -4em  5em,
-    7em   5em,
-    8em   5em,
-    /* row 7 */
-    -6em  6em,
-    -5em  6em,
-    8em   6em,
-    9em   6em,
-    /* row 8 */
-    -7em  7em,
-    -6em  7em,
-    0     7em,
-    1em   7em,
-    2em   7em,
-    3em   7em,
-    9em   7em,
-    10em  7em,
-    /* row 9 */
-    -8em  8em,
-    -7em  8em,
-    -1em  8em,
-    0     8em,
-    1em   8em,
-    2em   8em,
-    3em   8em,
-    4em   8em,
-    10em  8em,
-    11em  8em,
-    /* row 10 */
-    -9em  9em,
-    -8em  9em,
-    -1em  9em,
-    0     9em,
-    1em   9em,
-    2em   9em,
-    3em   9em,
-    4em   9em,
-    11em  9em,
-    12em  9em,
-    /* row 11 */
-    -10em 10em,
-    -9em  10em,
-    -1em  10em,
-    0     10em,
-    1em   10em,
-    2em   10em,
-    3em   10em,
-    4em   10em,
-    12em  10em,
-    13em  10em,
-    /* row 12 */
-    -11em 11em,
-    -10em 11em,
-    -1em  11em,
-    0     11em,
-    1em   11em,
-    2em   11em,
-    3em   11em,
-    4em   11em,
-    13em  11em,
-    14em  11em,
-    /* row 13 */
-    -12em 12em,
-    -11em 12em,
-    -8em  12em,
-    -7em  12em,
-    -6em  12em,
-    -5em  12em,
-    -4em  12em,
-    -3em  12em,
-    -2em  12em,
-    0     12em,
-    1em   12em,
-    2em   12em,
-    3em   12em,
-    14em  12em,
-    15em  12em,
-    /* row 14 */
-    -13em 13em,
-    -12em 13em,
-    -8em  13em,
-    -4em  13em,
-    -3em  13em,
-    -2em  13em,
-    -1em  13em,
-    15em  13em,
-    16em  13em,
-    /* row 15 */
-    -14em 14em,
-    -13em 14em,
-    -7em  14em,
-    -5em  14em,
-    -4em  14em,
-    -3em  14em,
-    -2em  14em,
-    -1em  14em,
-    0     14em,
-    16em  14em,
-    17em  14em,
-    /* row 16 */
-    -15em 15em,
-    -14em 15em,
-    -7em  15em,
-    -6em  15em,
-    -5em  15em,
-    -4em  15em,
-    -3em  15em,
-    -2em  15em,
-    0     15em,
-    17em  15em,
-    18em  15em,
-    /* row 17 */
-    -16em 16em,
-    -15em 16em,
-    -7em  16em,
-    -6em  16em,
-    -5em  16em,
-    -4em  16em,
-    -3em  16em,
-    0     16em,
-    18em  16em,
-    19em  16em,
-    /* row 18 */
-    -17em 17em,
-    -16em 17em,
-    -8em  17em,
-    -7em  17em,
-    -6em  17em,
-    -5em  17em,
-    -4em  17em,
-    -3em  17em,
-    0     17em,
-    19em  17em,
-    20em  17em,
-    /* row 19 */
-    -17em 18em,
-    -16em 18em,
-    -8em  18em,
-    -7em  18em,
-    -6em  18em,
-    -5em  18em,
-    -4em  18em,
-    -2em  18em,
-    0     18em,
-    19em  18em,
-    20em  18em,
-    /* row 20 */
-    -17em 19em,
-    -16em 19em,
-    -8em  19em,
-    -7em  19em,
-    -6em  19em,
-    -5em  19em,
-    -4em  19em,
-    -1em  19em,
-    0     19em,
-    19em  19em,
-    20em  19em,
-    /* row 21 */
-    -17em 20em,
-    -16em 20em,
-    -8em  20em,
-    -7em  20em,
-    -6em  20em,
-    -5em  20em,
-    -4em  20em,
-    -3em  20em,
-    0     20em,
-    19em  20em,
-    20em  20em,
-    /* row 22 */
-    -16em 21em,
-    -15em 21em,
-    -8em  21em,
-    -7em  21em,
-    -6em  21em,
-    -5em  21em,
-    -4em  21em,
-    -3em  21em,
-    -2em  21em,
-    1em   21em,
-    18em  21em,
-    19em  21em,
-    /* row 23 */
-    -15em 22em,
-    -14em 22em,
-    -8em  22em,
-    -7em  22em,
-    -6em  22em,
-    -4em  22em,
-    -3em  22em,
-    -2em  22em,
-    -1em  22em,
-    2em   22em,
-    17em  22em,
-    18em  22em,
-    /* row 24 */
-    -14em 23em,
-    -13em 23em,
-    -8em  23em,
-    -7em  23em,
-    -6em  23em,
-    -3em  23em,
-    -2em  23em,
-    -1em  23em,
-    3em   23em,
-    16em  23em,
-    17em  23em,
-    /* row 25 */
-    -13em 24em,
-    -12em 24em,
-    -8em  24em,
-    -7em  24em,
-    -6em  24em,
-    -3em  24em,
-    -2em  24em,
-    -1em  24em,
-    4em   24em,
-    5em   24em,
-    6em   24em,
-    15em  24em,
-    16em  24em,
-    /* row 26 */
-    -12em 25em,
-    -11em 25em,
-    -8em  25em,
-    -7em  25em,
-    -6em  25em,
-    -3em  25em,
-    -2em  25em,
-    -1em  25em,
-    4em   25em,
-    5em   25em,
-    6em   25em,
-    7em   25em,
-    14em  25em,
-    15em  25em,
-    /* row 27 */
-    -11em 26em,
-    -10em 26em,
-    -8em  26em,
-    -7em  26em,
-    -6em  26em,
-    -3em  26em,
-    -2em  26em,
-    3em   26em,
-    4em   26em,
-    5em   26em,
-    6em   26em,
-    7em   26em,
-    8em   26em,
-    13em  26em,
-    14em  26em,
-    /* row 28 */
-    -10em 27em,
-    -9em  27em,
-    -7em  27em,
-    -6em  27em,
-    -3em  27em,
-    -2em  27em,
-    -1em  27em,
-    2em   27em,
-    3em   27em,
-    4em   27em,
-    5em   27em,
-    6em   27em,
-    7em   27em,
-    8em   27em,
-    9em   27em,
-    12em  27em,
-    13em  27em,
-    /* row 29 */
-    -9em  28em,
-    -8em  28em,
-    -6em  28em,
-    -3em  28em,
-    -2em  28em,
-    -1em  28em,
-    2em   28em,
-    3em   28em,
-    4em   28em,
-    5em   28em,
-    6em   28em,
-    7em   28em,
-    8em   28em,
-    9em   28em,
-    11em  28em,
-    12em  28em,
-    /* row 30 */
-    -8em  29em,
-    -7em  29em,
-    10em  29em,
-    11em  29em,
-    /* row 31 */
-    -7em  30em,
-    -6em  30em,
-    9em   30em,
-    10em  30em,
-    /* row 32 */
-    -6em  31em,
-    -5em  31em,
-    8em   31em,
-    9em   31em,
-    /* row 33 */
-    -5em  32em,
-    -4em  32em,
-    7em   32em,
-    8em   32em,
-    /* row 34 */
-    -4em  33em,
-    -3em  33em,
-    6em   33em,
-    7em   33em,
-    /* row 35 */
-    -3em  34em,
-    -2em  34em,
-    5em   34em,
-    6em   34em,
-    /* row 36 */
-    -2em  35em,
-    -1em  35em,
-    4em   35em,
-    5em   35em,
-    /* row 37 */
-    -1em  36em,
-    0     36em,
-    1em   36em,
-    2em   36em,
-    3em   36em,
-    4em   36em,
-    /* row 38 */
-    0     37em,
-    1em   37em,
-    2em   37em,
-    3em   37em;
-}
 
-/* Animation */
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-@keyframes work {
-  25% {
-box-shadow:
-    /* row 1 */
-    inset 0 0 0 1em,
-    1em   0,
-    2em   0,
-    3em   0,
-    /* row 2 */
-    -1em  1em,
-    0     1em,
-    1em   1em,
-    2em   1em,
-    3em   1em,
-    4em   1em,
-    /* row 3 */
-    -2em  2em,
-    -1em  2em,
-    4em   2em,
-    5em   2em,
-    /* row 4 */
-    -3em  3em,
-    -2em  3em,
-    5em   3em,
-    6em   3em,
-    /* row 5 */
-    -4em  4em,
-    -3em  4em,
-    6em   4em,
-    7em   4em,
-    /* row 6 */
-    -5em  5em,
-    -4em  5em,
-    7em   5em,
-    8em   5em,
-    /* row 7 */
-    -6em  6em,
-    -5em  6em,
-    8em   6em,
-    9em   6em,
-    /* row 8 */
-    -7em  7em,
-    -6em  7em,
-    0     7em,
-    1em   7em,
-    2em   7em,
-    3em   7em,
-    9em   7em,
-    10em  7em,
-    /* row 9 */
-    -8em  8em,
-    -7em  8em,
-    -1em  8em,
-    0     8em,
-    1em   8em,
-    2em   8em,
-    3em   8em,
-    4em   8em,
-    10em  8em,
-    11em  8em,
-    /* row 10 */
-    -9em  9em,
-    -8em  9em,
-    -1em  9em,
-    0     9em,
-    1em   9em,
-    2em   9em,
-    3em   9em,
-    4em   9em,
-    11em  9em,
-    12em  9em,
-    /* row 11 */
-    -10em 10em,
-    -9em  10em,
-    -1em  10em,
-    0     10em,
-    1em   10em,
-    2em   10em,
-    3em   10em,
-    4em   10em,
-    12em  10em,
-    13em  10em,
-    /* row 12 */
-    -11em 11em,
-    -10em 11em,
-    -1em  11em,
-    0     11em,
-    1em   11em,
-    2em   11em,
-    3em   11em,
-    4em   11em,
-    13em  11em,
-    14em  11em,
-    /* row 13 */
-    -12em 12em,
-    -11em 12em,
-    -8em  12em,
-    -7em  12em,
-    -6em  12em,
-    -5em  12em,
-    -4em  12em,
-    -3em  12em,
-    -2em  12em,
-    0     12em,
-    1em   12em,
-    2em   12em,
-    3em   12em,
-    14em  12em,
-    15em  12em,
-    /* row 14 */
-    -13em 13em,
-    -12em 13em,
-    -8em  13em,
-    -4em  13em,
-    -3em  13em,
-    -2em  13em,
-    -1em  13em,
-    15em  13em,
-    16em  13em,
-    /* row 15 */
-    -14em 14em,
-    -13em 14em,
-    -7em  14em,
-    -5em  14em,
-    -4em  14em,
-    -3em  14em,
-    -2em  14em,
-    -1em  14em,
-    0     14em,
-    16em  14em,
-    17em  14em,
-    /* row 16 */
-    -15em 15em,
-    -14em 15em,
-    -7em  15em,
-    -6em  15em,
-    -5em  15em,
-    -4em  15em,
-    -3em  15em,
-    -2em  15em,
-    0     15em,
-    17em  15em,
-    18em  15em,
-    /* row 17 */
-    -16em 16em,
-    -15em 16em,
-    -7em  16em,
-    -6em  16em,
-    -5em  16em,
-    -4em  16em,
-    -3em  16em,
-    0     16em,
-    18em  16em,
-    19em  16em,
-    /* row 18 */
-    -17em 17em,
-    -16em 17em,
-    -8em  17em,
-    -7em  17em,
-    -6em  17em,
-    -5em  17em,
-    -4em  17em,
-    -3em  17em,
-    0     17em,
-    19em  17em,
-    20em  17em,
-    /* row 19 */
-    -17em 18em,
-    -16em 18em,
-    -8em  18em,
-    -7em  18em,
-    -6em  18em,
-    -5em  18em,
-    -4em  18em,
-    -2em  18em,
-    0     18em,
-    19em  18em,
-    20em  18em,
-    /* row 20 */
-    -17em 19em,
-    -16em 19em,
-    -8em  19em,
-    -7em  19em,
-    -6em  19em,
-    -5em  19em,
-    -4em  19em,
-    -1em  19em,
-    0     19em,
-    19em  19em,
-    20em  19em,
-    /* row 21 */
-    -17em 20em,
-    -16em 20em,
-    -8em  20em,
-    -7em  20em,
-    -6em  20em,
-    -5em  20em,
-    -4em  20em,
-    -3em  20em,
-    0     20em,
-    19em  20em,
-    20em  20em,
-    /* row 22 */
-    -16em 21em,
-    -15em 21em,
-    -8em  21em,
-    -7em  21em,
-    -6em  21em,
-    -5em  21em,
-    -4em  21em,
-    -3em  21em,
-    -2em  21em,
-    1em   21em,
-    18em  21em,
-    19em  21em,
-    /* row 23 */
-    -15em 22em,
-    -14em 22em,
-    -8em  22em,
-    -7em  22em,
-    -6em  22em,
-    -4em  22em,
-    -3em  22em,
-    -2em  22em,
-    -1em  22em,
-    2em   22em,
-    17em  22em,
-    18em  22em,
-    /* row 24 */
-    -14em 23em,
-    -13em 23em,
-    -8em  23em,
-    -7em  23em,
-    -6em  23em,
-    -3em  23em,
-    -2em  23em,
-    -1em  23em,
-    3em   23em,
-    16em  23em,
-    17em  23em,
-    /* row 25 */
-    -13em 24em,
-    -12em 24em,
-    -8em  24em,
-    -7em  24em,
-    -6em  24em,
-    -3em  24em,
-    -2em  24em,
-    -1em  24em,
-    4em   24em,
-    5em   24em,
-    6em   24em,
-    15em  24em,
-    16em  24em,
-    /* row 26 */
-    -12em 25em,
-    -11em 25em,
-    -8em  25em,
-    -7em  25em,
-    -6em  25em,
-    -3em  25em,
-    -2em  25em,
-    -1em  25em,
-    4em   25em,
-    5em   25em,
-    6em   25em,
-    7em   25em,
-    14em  25em,
-    15em  25em,
-    /* row 27 */
-    -11em 26em,
-    -10em 26em,
-    -8em  26em,
-    -7em  26em,
-    -6em  26em,
-    -3em  26em,
-    -2em  26em,
-    3em   26em,
-    4em   26em,
-    5em   26em,
-    6em   26em,
-    7em   26em,
-    8em   26em,
-    13em  26em,
-    14em  26em,
-    /* row 28 */
-    -10em 27em,
-    -9em  27em,
-    -7em  27em,
-    -6em  27em,
-    -3em  27em,
-    -2em  27em,
-    -1em  27em,
-    2em   27em,
-    3em   27em,
-    4em   27em,
-    5em   27em,
-    6em   27em,
-    7em   27em,
-    8em   27em,
-    9em   27em,
-    12em  27em,
-    13em  27em,
-    /* row 29 */
-    -9em  28em,
-    -8em  28em,
-    -6em  28em,
-    -3em  28em,
-    -2em  28em,
-    -1em  28em,
-    2em   28em,
-    3em   28em,
-    4em   28em,
-    5em   28em,
-    6em   28em,
-    7em   28em,
-    8em   28em,
-    9em   28em,
-    11em  28em,
-    12em  28em,
-    /* row 30 */
-    -8em  29em,
-    -7em  29em,
-    10em  29em,
-    11em  29em,
-    /* row 31 */
-    -7em  30em,
-    -6em  30em,
-    9em   30em,
-    10em  30em,
-    /* row 32 */
-    -6em  31em,
-    -5em  31em,
-    8em   31em,
-    9em   31em,
-    /* row 33 */
-    -5em  32em,
-    -4em  32em,
-    7em   32em,
-    8em   32em,
-    /* row 34 */
-    -4em  33em,
-    -3em  33em,
-    6em   33em,
-    7em   33em,
-    /* row 35 */
-    -3em  34em,
-    -2em  34em,
-    5em   34em,
-    6em   34em,
-    /* row 36 */
-    -2em  35em,
-    -1em  35em,
-    4em   35em,
-    5em   35em,
-    /* row 37 */
-    -1em  36em,
-    0     36em,
-    1em   36em,
-    2em   36em,
-    3em   36em,
-    4em   36em,
-    /* row 38 */
-    0     37em,
-    1em   37em,
-    2em   37em,
-    3em   37em;
-}
-  50% {
-box-shadow:
-    /* row 1 */
-    inset 0 0 0 1em,
-    1em   0,
-    2em   0,
-    3em   0,
-    /* row 2 */
-    -1em  1em,
-    0     1em,
-    1em   1em,
-    2em   1em,
-    3em   1em,
-    4em   1em,
-    /* row 3 */
-    -2em  2em,
-    -1em  2em,
-    4em   2em,
-    5em   2em,
-    /* row 4 */
-    -3em  3em,
-    -2em  3em,
-    5em   3em,
-    6em   3em,
-    /* row 5 */
-    -4em  4em,
-    -3em  4em,
-    6em   4em,
-    7em   4em,
-    /* row 6 */
-    -5em  5em,
-    -4em  5em,
-    7em   5em,
-    8em   5em,
-    /* row 7 */
-    -6em  6em,
-    -5em  6em,
-    8em   6em,
-    9em   6em,
-    /* row 8 */
-    -7em  7em,
-    -6em  7em,
-    0     7em,
-    1em   7em,
-    2em   7em,
-    3em   7em,
-    9em   7em,
-    10em  7em,
-    /* row 9 */
-    -8em  8em,
-    -7em  8em,
-    -1em  8em,
-    0     8em,
-    1em   8em,
-    2em   8em,
-    3em   8em,
-    4em   8em,
-    10em  8em,
-    11em  8em,
-    /* row 10 */
-    -9em  9em,
-    -8em  9em,
-    -1em  9em,
-    0     9em,
-    1em   9em,
-    2em   9em,
-    3em   9em,
-    4em   9em,
-    11em  9em,
-    12em  9em,
-    /* row 11 */
-    -10em 10em,
-    -9em  10em,
-    -1em  10em,
-    0     10em,
-    1em   10em,
-    2em   10em,
-    3em   10em,
-    4em   10em,
-    12em  10em,
-    13em  10em,
-    /* row 12 */
-    -11em 11em,
-    -10em 11em,
-    -1em  11em,
-    0     11em,
-    1em   11em,
-    2em   11em,
-    3em   11em,
-    4em   11em,
-    13em  11em,
-    14em  11em,
-    /* row 13 */
-    -12em 12em,
-    -11em 12em,
-    -9em  12em,
-    -8em  12em,
-    -7em  12em,
-    -6em  12em,
-    -5em  12em,
-    -4em  12em,
-    -3em  12em,
-    -2em  12em,
-    0     12em,
-    1em   12em,
-    2em   12em,
-    3em   12em,
-    14em  12em,
-    15em  12em,
-    /* row 14 */
-    -13em 13em,
-    -12em 13em,
-    -9em  13em,
-    -4em  13em,
-    -3em  13em,
-    -2em  13em,
-    -1em  13em,
-    15em  13em,
-    16em  13em,
-    /* row 15 */
-    -14em 14em,
-    -13em 14em,
-    -8em  14em,
-    -5em  14em,
-    -4em  14em,
-    -3em  14em,
-    -2em  14em,
-    -1em  14em,
-    0     14em,
-    16em  14em,
-    17em  14em,
-    /* row 16 */
-    -15em 15em,
-    -14em 15em,
-    -7em  15em,
-    -6em  15em,
-    -5em  15em,
-    -4em  15em,
-    -3em  15em,
-    -2em  15em,
-    0     15em,
-    17em  15em,
-    18em  15em,
-    /* row 17 */
-    -16em 16em,
-    -15em 16em,
-    -7em  16em,
-    -6em  16em,
-    -5em  16em,
-    -4em  16em,
-    -3em  16em,
-    0     16em,
-    18em  16em,
-    19em  16em,
-    /* row 18 */
-    -17em 17em,
-    -16em 17em,
-    -8em  17em,
-    -7em  17em,
-    -6em  17em,
-    -5em  17em,
-    -4em  17em,
-    -2em  17em,
-    0     17em,
-    19em  17em,
-    20em  17em,
-    /* row 19 */
-    -17em 18em,
-    -16em 18em,
-    -8em  18em,
-    -7em  18em,
-    -6em  18em,
-    -5em  18em,
-    -4em  18em,
-    -1em  18em,
-    0     18em,
-    19em  18em,
-    20em  18em,
-    /* row 20 */
-    -17em 19em,
-    -16em 19em,
-    -8em  19em,
-    -7em  19em,
-    -6em  19em,
-    -5em  19em,
-    -4em  19em,
-    1em   19em,
-    19em  19em,
-    20em  19em,
-    /* row 21 */
-    -17em 20em,
-    -16em 20em,
-    -8em  20em,
-    -7em  20em,
-    -6em  20em,
-    -5em  20em,
-    -4em  20em,
-    -3em  20em,
-    2em   20em,
-    19em  20em,
-    20em  20em,
-    /* row 22 */
-    -16em 21em,
-    -15em 21em,
-    -8em  21em,
-    -7em  21em,
-    -6em  21em,
-    -5em  21em,
-    -4em  21em,
-    -3em  21em,
-    -2em  21em,
-    3em   21em,
-    18em  21em,
-    19em  21em,
-    /* row 23 */
-    -15em 22em,
-    -14em 22em,
-    -8em  22em,
-    -7em  22em,
-    -6em  22em,
-    -4em  22em,
-    -3em  22em,
-    -2em  22em,
-    -1em  22em, 
-    4em   22em,
-    5em   22em,
-    6em   22em,
-    7em   22em,
-    17em  22em,
-    18em  22em,
-    /* row 24 */
-    -14em 23em,
-    -13em 23em,
-    -8em  23em,
-    -7em  23em,
-    -6em  23em,
-    -3em  23em,
-    -2em  23em,
-    -1em  23em,
-    4em   23em,
-    5em   23em,
-    6em   23em,
-    7em   23em,
-    8em   23em,
-    16em  23em,
-    17em  23em,
-    /* row 25 */
-    -13em 24em,
-    -12em 24em,
-    -8em  24em,
-    -7em  24em,
-    -6em  24em,
-    -3em  24em,
-    -2em  24em,
-    -1em  24em,
-    4em   24em,
-    5em   24em,
-    6em   24em,
-    7em   24em,
-    8em   24em,
-    15em  24em,
-    16em  24em,
-    /* row 26 */
-    -12em 25em,
-    -11em 25em,
-    -8em  25em,
-    -7em  25em,
-    -6em  25em,
-    -3em  25em,
-    -2em  25em,
-    -1em  25em,
-    4em   25em,
-    5em   25em,
-    6em   25em,
-    7em   25em,
-    8em   25em,
-    14em  25em,
-    15em  25em,
-    /* row 27 */
-    -11em 26em,
-    -10em 26em,
-    -8em  26em,
-    -7em  26em,
-    -6em  26em,
-    -3em  26em,
-    -2em  26em,
-    3em   26em,
-    4em   26em,
-    5em   26em,
-    6em   26em,
-    7em   26em,
-    8em   26em,
-    13em  26em,
-    14em  26em,
-    /* row 28 */
-    -10em 27em,
-    -9em  27em,
-    -7em  27em,
-    -6em  27em,
-    -3em  27em,
-    -2em  27em,
-    -1em  27em,
-    2em   27em,
-    3em   27em,
-    4em   27em,
-    5em   27em,
-    6em   27em,
-    7em   27em,
-    8em   27em,
-    9em   27em,
-    12em  27em,
-    13em  27em,
-    /* row 29 */
-    -9em  28em,
-    -8em  28em,
-    -6em  28em,
-    -3em  28em,
-    -2em  28em,
-    -1em  28em,
-    2em   28em,
-    3em   28em,
-    4em   28em,
-    5em   28em,
-    6em   28em,
-    7em   28em,
-    8em   28em,
-    9em   28em,
-    11em  28em,
-    12em  28em,
-    /* row 30 */
-    -8em  29em,
-    -7em  29em,
-    10em  29em,
-    11em  29em,
-    /* row 31 */
-    -7em  30em,
-    -6em  30em,
-    9em   30em,
-    10em  30em,
-    /* row 32 */
-    -6em  31em,
-    -5em  31em,
-    8em   31em,
-    9em   31em,
-    /* row 33 */
-    -5em  32em,
-    -4em  32em,
-    7em   32em,
-    8em   32em,
-    /* row 34 */
-    -4em  33em,
-    -3em  33em,
-    6em   33em,
-    7em   33em,
-    /* row 35 */
-    -3em  34em,
-    -2em  34em,
-    5em   34em,
-    6em   34em,
-    /* row 36 */
-    -2em  35em,
-    -1em  35em,
-    4em   35em,
-    5em   35em,
-    /* row 37 */
-    -1em  36em,
-    0     36em,
-    1em   36em,
-    2em   36em,
-    3em   36em,
-    4em   36em,
-    /* row 38 */
-    0     37em,
-    1em   37em,
-    2em   37em,
-    3em   37em;
-}
+    <title>Tessert Desserts</title>
 
-  75% {
-box-shadow:
-    /* row 1 */
-    inset 0 0 0 1em,
-    1em   0,
-    2em   0,
-    3em   0,
-    /* row 2 */
-    -1em  1em,
-    0     1em,
-    1em   1em,
-    2em   1em,
-    3em   1em,
-    4em   1em,
-    /* row 3 */
-    -2em  2em,
-    -1em  2em,
-    4em   2em,
-    5em   2em,
-    /* row 4 */
-    -3em  3em,
-    -2em  3em,
-    5em   3em,
-    6em   3em,
-    /* row 5 */
-    -4em  4em,
-    -3em  4em,
-    6em   4em,
-    7em   4em,
-    /* row 6 */
-    -5em  5em,
-    -4em  5em,
-    7em   5em,
-    8em   5em,
-    /* row 7 */
-    -6em  6em,
-    -5em  6em,
-    8em   6em,
-    9em   6em,
-    /* row 8 */
-    -7em  7em,
-    -6em  7em,
-    0     7em,
-    1em   7em,
-    2em   7em,
-    3em   7em,
-    9em   7em,
-    10em  7em,
-    /* row 9 */
-    -8em  8em,
-    -7em  8em,
-    -1em  8em,
-    0     8em,
-    1em   8em,
-    2em   8em,
-    3em   8em,
-    4em   8em,
-    10em  8em,
-    11em  8em,
-    /* row 10 */
-    -9em  9em,
-    -8em  9em,
-    -1em  9em,
-    0     9em,
-    1em   9em,
-    2em   9em,
-    3em   9em,
-    4em   9em,
-    11em  9em,
-    12em  9em,
-    /* row 11 */
-    -10em 10em,
-    -9em  10em,
-    -1em  10em,
-    0     10em,
-    1em   10em,
-    2em   10em,
-    3em   10em,
-    4em   10em,
-    12em  10em,
-    13em  10em,
-    /* row 12 */
-    -11em 11em,
-    -10em 11em,
-    -1em  11em,
-    0     11em,
-    1em   11em,
-    2em   11em,
-    3em   11em,
-    4em   11em,
-    13em  11em,
-    14em  11em,
-    /* row 13 */
-    -12em 12em,
-    -11em 12em,
-    -9em  12em,
-    -8em  12em,
-    -7em  12em,
-    -6em  12em,
-    -5em  12em,
-    -4em  12em,
-    -3em  12em,
-    -2em  12em,
-    0     12em,
-    1em   12em,
-    2em   12em,
-    3em   12em,
-    14em  12em,
-    15em  12em,
-    /* row 14 */
-    -13em 13em,
-    -12em 13em,
-    -9em  13em,
-    -4em  13em,
-    -3em  13em,
-    -2em  13em,
-    -1em  13em,
-    15em  13em,
-    16em  13em,
-    /* row 15 */
-    -14em 14em,
-    -13em 14em,
-    -9em  14em,
-    -5em  14em,
-    -4em  14em,
-    -3em  14em,
-    -2em  14em,
-    -1em  14em,
-    0     14em,
-    16em  14em,
-    17em  14em,
-    /* row 16 */
-    -15em 15em,
-    -14em 15em,
-    -9em  15em,
-    -7em  15em,
-    -6em  15em,
-    -5em  15em,
-    -4em  15em,
-    -3em  15em,
-    -2em  15em,
-    0     15em,
-    17em  15em,
-    18em  15em,
-    /* row 17 */
-    -16em 16em,
-    -15em 16em,
-    -9em  16em,
-    -8em  16em,
-    -7em  16em,
-    -6em  16em,
-    -5em  16em,
-    -4em  16em,
-    -3em  16em,
-    0     16em,
-    18em  16em,
-    19em  16em,
-    /* row 18 */
-    -17em 17em,
-    -16em 17em,
-    -8em  17em,
-    -7em  17em,
-    -6em  17em,
-    -5em  17em,
-    -4em  17em,
-    0     17em,
-    19em  17em,
-    20em  17em,
-    /* row 19 */
-    -17em 18em,
-    -16em 18em,
-    -8em  18em,
-    -7em  18em,
-    -6em  18em,
-    -5em  18em,
-    -4em  18em,
-    -3em  18em,
-    -2em  18em,
-    0     18em,
-    6em   18em,
-    7em   18em,
-    19em  18em,
-    20em  18em,
-    /* row 20 */
-    -17em 19em,
-    -16em 19em,
-    -8em  19em,
-    -7em  19em,
-    -6em  19em,
-    -5em  19em,
-    -4em  19em,
-    -1em  19em,
-    0     19em,
-    1em   19em,
-    5em   19em,
-    6em   19em,
-    7em   19em,
-    8em   19em,
-    19em  19em,
-    20em  19em,
-    /* row 21 */
-    -17em 20em,
-    -16em 20em,
-    -8em  20em,
-    -7em  20em,
-    -6em  20em,
-    -5em  20em,
-    -4em  20em,
-    -3em  20em,
-    2em   20em,
-    3em   20em,
-    4em   20em,
-    5em   20em,
-    6em   20em,
-    7em   20em,
-    8em   20em,
-    9em   20em,
-    19em  20em,
-    20em  20em,
-    /* row 22 */
-    -16em 21em,
-    -15em 21em,
-    -8em  21em,
-    -7em  21em,
-    -6em  21em,
-    -5em  21em,
-    -4em  21em,
-    -3em  21em,
-    -2em  21em,
-    4em   21em,
-    5em   21em,
-    6em   21em,
-    7em   21em,
-    8em   21em,
-    9em   21em,
-    18em  21em,
-    19em  21em,
-    /* row 23 */
-    -15em 22em,
-    -14em 22em,
-    -8em  22em,
-    -7em  22em,
-    -6em  22em,
-    -4em  22em,
-    -3em  22em,
-    -2em  22em,
-    -1em  22em,
-    4em   22em,
-    5em   22em,
-    6em   22em,
-    7em   22em,
-    8em   22em,
-    9em   22em,
-    17em  22em,
-    18em  22em,
-    /* row 24 */
-    -14em 23em,
-    -13em 23em,
-    -8em  23em,
-    -7em  23em,
-    -6em  23em,
-    -3em  23em,
-    -2em  23em,
-    -1em  23em,
-    7em   23em,
-    8em   23em,
-    9em   23em,
-    16em  23em,
-    17em  23em,
-    /* row 25 */
-    -13em 24em,
-    -12em 24em,
-    -8em  24em,
-    -7em  24em,
-    -6em  24em,
-    -3em  24em,
-    -2em  24em,
-    -1em  24em,
-    5em   24em,
-    6em   24em,
-    15em  24em,
-    16em  24em,
-    /* row 26 */
-    -12em 25em,
-    -11em 25em,
-    -8em  25em,
-    -7em  25em,
-    -6em  25em,
-    -3em  25em,
-    -2em  25em,
-    -1em  25em,
-    4em   25em,
-    5em   25em,
-    6em   25em,
-    7em   25em,
-    14em  25em,
-    15em  25em,
-    /* row 27 */
-    -11em 26em,
-    -10em 26em,
-    -8em  26em,
-    -7em  26em,
-    -6em  26em,
-    -3em  26em,
-    -2em  26em,
-    3em   26em,
-    4em   26em,
-    5em   26em,
-    6em   26em,
-    7em   26em,
-    8em   26em,
-    13em  26em,
-    14em  26em,
-    /* row 28 */
-    -10em 27em,
-    -9em  27em,
-    -7em  27em,
-    -6em  27em,
-    -3em  27em,
-    -2em  27em,
-    -1em  27em,
-    2em   27em,
-    3em   27em,
-    4em   27em,
-    5em   27em,
-    6em   27em,
-    7em   27em,
-    8em   27em,
-    9em   27em,
-    12em  27em,
-    13em  27em,
-    /* row 29 */
-    -9em  28em,
-    -8em  28em,
-    -6em  28em,
-    -3em  28em,
-    -2em  28em,
-    -1em  28em,
-    2em   28em,
-    3em   28em,
-    4em   28em,
-    5em   28em,
-    6em   28em,
-    7em   28em,
-    8em   28em,
-    9em   28em,
-    11em  28em,
-    12em  28em,
-    /* row 30 */
-    -8em  29em,
-    -7em  29em,
-    10em  29em,
-    11em  29em,
-    /* row 31 */
-    -7em  30em,
-    -6em  30em,
-    9em   30em,
-    10em  30em,
-    /* row 32 */
-    -6em  31em,
-    -5em  31em,
-    8em   31em,
-    9em   31em,
-    /* row 33 */
-    -5em  32em,
-    -4em  32em,
-    7em   32em,
-    8em   32em,
-    /* row 34 */
-    -4em  33em,
-    -3em  33em,
-    6em   33em,
-    7em   33em,
-    /* row 35 */
-    -3em  34em,
-    -2em  34em,
-    5em   34em,
-    6em   34em,
-    /* row 36 */
-    -2em  35em,
-    -1em  35em,
-    4em   35em,
-    5em   35em,
-    /* row 37 */
-    -1em  36em,
-    0     36em,
-    1em   36em,
-    2em   36em,
-    3em   36em,
-    4em   36em,
-    /* row 38 */
-    0     37em,
-    1em   37em,
-    2em   37em,
-    3em   37em;
-}
-  100% {
-box-shadow:
-    /* row 1 */
-    inset 0 0 0 1em,
-    1em   0,
-    2em   0,
-    3em   0,
-    /* row 2 */
-    -1em  1em,
-    0     1em,
-    1em   1em,
-    2em   1em,
-    3em   1em,
-    4em   1em,
-    /* row 3 */
-    -2em  2em,
-    -1em  2em,
-    4em   2em,
-    5em   2em,
-    /* row 4 */
-    -3em  3em,
-    -2em  3em,
-    5em   3em,
-    6em   3em,
-    /* row 5 */
-    -4em  4em,
-    -3em  4em,
-    6em   4em,
-    7em   4em,
-    /* row 6 */
-    -5em  5em,
-    -4em  5em,
-    7em   5em,
-    8em   5em,
-    /* row 7 */
-    -6em  6em,
-    -5em  6em,
-    8em   6em,
-    9em   6em,
-    /* row 8 */
-    -7em  7em,
-    -6em  7em,
-    0     7em,
-    1em   7em,
-    2em   7em,
-    3em   7em,
-    9em   7em,
-    10em  7em,
-    /* row 9 */
-    -8em  8em,
-    -7em  8em,
-    -1em  8em,
-    0     8em,
-    1em   8em,
-    2em   8em,
-    3em   8em,
-    4em   8em,
-    10em  8em,
-    11em  8em,
-    /* row 10 */
-    -9em  9em,
-    -8em  9em,
-    -1em  9em,
-    0     9em,
-    1em   9em,
-    2em   9em,
-    3em   9em,
-    4em   9em,
-    11em  9em,
-    12em  9em,
-    /* row 11 */
-    -10em 10em,
-    -9em  10em,
-    -1em  10em,
-    0     10em,
-    1em   10em,
-    2em   10em,
-    3em   10em,
-    4em   10em,
-    9em   10em,
-    10em  10em,
-    12em  10em,
-    13em  10em,
-    /* row 12 */
-    -11em 11em,
-    -10em 11em,
-    -1em  11em,
-    0     11em,
-    1em   11em,
-    2em   11em,
-    3em   11em,
-    4em   11em,
-    7em   11em,
-    9em   11em,
-    10em  11em,
-    13em  11em,
-    14em  11em,
-    /* row 13 */
-    -12em 12em,
-    -11em 12em,
-    -9em  12em,
-    -8em  12em,
-    -7em  12em,
-    -6em  12em,
-    -5em  12em,
-    -4em  12em,
-    -3em  12em,
-    -2em  12em,
-    0     12em,
-    1em   12em,
-    2em   12em,
-    3em   12em,
-    14em  12em,
-    15em  12em,
-    /* row 14 */
-    -13em 13em,
-    -12em 13em,
-    -9em  13em,
-    -4em  13em,
-    -3em  13em,
-    -2em  13em,
-    -1em  13em,
-    8em   13em,
-    15em  13em,
-    16em  13em,
-    /* row 15 */
-    -14em 14em,
-    -13em 14em,
-    -9em  14em,
-    -5em  14em,
-    -4em  14em,
-    -3em  14em,
-    -2em  14em,
-    -1em  14em,
-    0     14em,
-    8em   14em,
-    10em  14em,
-    16em  14em,
-    17em  14em,
-    /* row 16 */
-    -15em 15em,
-    -14em 15em,
-    -9em  15em,
-    -7em  15em,
-    -6em  15em,
-    -5em  15em,
-    -4em  15em,
-    -3em  15em,
-    -2em  15em,
-    0     15em,
-    6em   15em,
-    10em  15em,
-    17em  15em,
-    18em  15em,
-    /* row 17 */
-    -16em 16em,
-    -15em 16em,
-    -9em  16em,
-    -7em  16em,
-    -6em  16em,
-    -5em  16em,
-    -4em  16em,
-    -3em  16em,
-    0     16em,
-    6em   16em,
-    8em   16em,
-    18em  16em,
-    19em  16em,
-    /* row 18 */
-    -17em 17em,
-    -16em 17em,
-    -9em  17em,
-    -8em  17em,
-    -7em  17em,
-    -6em  17em,
-    -5em  17em,
-    -4em  17em,
-    0     17em,
-    19em  17em,
-    20em  17em,
-    /* row 19 */
-    -17em 18em,
-    -16em 18em,
-    -9em  18em,
-    -8em  18em,
-    -7em  18em,
-    -6em  18em,
-    -5em  18em,
-    -4em  18em,
-    -3em  18em,
-    -2em  18em,
-    -1em  18em,
-    0     18em,
-    1em   18em,
-    2em   18em,
-    3em   18em,
-    4em   18em,
-    5em   18em,
-    6em   18em,
-    7em   18em,
-    8em   18em,
-    9em   18em,
-    10em  18em,
-    11em  18em,
-    19em  18em,
-    20em  18em,
-    /* row 20 */
-    -17em 19em,
-    -16em 19em,
-    -8em  19em,
-    -7em  19em,
-    -6em  19em,
-    -5em  19em,
-    -4em  19em,
-    0     19em,
-    6em   19em,
-    7em   19em,
-    8em   19em,
-    9em   19em,
-    10em  19em,
-    19em  19em,
-    20em  19em,
-    /* row 21 */
-    -17em 20em,
-    -16em 20em,
-    -8em  20em,
-    -7em  20em,
-    -6em  20em,
-    -5em  20em,
-    -4em  20em,
-    -3em  20em,
-    6em   20em,
-    7em   20em,
-    8em   20em,
-    9em   20em,
-    19em  20em,
-    20em  20em,
-    /* row 22 */
-    -16em 21em,
-    -15em 21em,
-    -8em  21em,
-    -7em  21em,
-    -6em  21em,
-    -5em  21em,
-    -4em  21em,
-    -3em  21em,
-    -2em  21em,
-    18em  21em,
-    19em  21em,
-    /* row 23 */
-    -15em 22em,
-    -14em 22em,
-    -8em  22em,
-    -7em  22em,
-    -6em  22em,
-    -4em  22em,
-    -3em  22em,
-    -2em  22em,
-    -1em  22em,
-    17em  22em,
-    18em  22em,
-    /* row 24 */
-    -14em 23em,
-    -13em 23em,
-    -8em  23em,
-    -7em  23em,
-    -6em  23em,
-    -3em  23em,
-    -2em  23em,
-    -1em  23em,
-    16em  23em,
-    17em  23em,
-    /* row 25 */
-    -13em 24em,
-    -12em 24em,
-    -8em  24em,
-    -7em  24em,
-    -6em  24em,
-    -3em  24em,
-    -2em  24em,
-    -1em  24em,
-    5em   24em,
-    6em   24em,
-    15em  24em,
-    16em  24em,
-    /* row 26 */
-    -12em 25em,
-    -11em 25em,
-    -8em  25em,
-    -7em  25em,
-    -6em  25em,
-    -3em  25em,
-    -2em  25em,
-    -1em  25em,
-    4em   25em,
-    5em   25em,
-    6em   25em,
-    7em   25em,
-    14em  25em,
-    15em  25em,
-    /* row 27 */
-    -11em 26em,
-    -10em 26em,
-    -8em  26em,
-    -7em  26em,
-    -6em  26em,
-    -3em  26em,
-    -2em  26em,
-    3em   26em,
-    4em   26em,
-    5em   26em,
-    6em   26em,
-    7em   26em,
-    8em   26em,
-    13em  26em,
-    14em  26em,
-    /* row 28 */
-    -10em 27em,
-    -9em  27em,
-    -7em  27em,
-    -6em  27em,
-    -3em  27em,
-    -2em  27em,
-    -1em  27em,
-    2em   27em,
-    3em   27em,
-    4em   27em,
-    5em   27em,
-    6em   27em,
-    7em   27em,
-    8em   27em,
-    9em   27em,
-    12em  27em,
-    13em  27em,
-    /* row 29 */
-    -9em  28em,
-    -8em  28em,
-    -6em  28em,
-    -3em  28em,
-    -2em  28em,
-    -1em  28em,
-    2em   28em,
-    3em   28em,
-    4em   28em,
-    5em   28em,
-    6em   28em,
-    7em   28em,
-    8em   28em,
-    9em   28em,
-    11em  28em,
-    12em  28em,
-    /* row 30 */
-    -8em  29em,
-    -7em  29em,
-    10em  29em,
-    11em  29em,
-    /* row 31 */
-    -7em  30em,
-    -6em  30em,
-    9em   30em,
-    10em  30em,
-    /* row 32 */
-    -6em  31em,
-    -5em  31em,
-    8em   31em,
-    9em   31em,
-    /* row 33 */
-    -5em  32em,
-    -4em  32em,
-    7em   32em,
-    8em   32em,
-    /* row 34 */
-    -4em  33em,
-    -3em  33em,
-    6em   33em,
-    7em   33em,
-    /* row 35 */
-    -3em  34em,
-    -2em  34em,
-    5em   34em,
-    6em   34em,
-    /* row 36 */
-    -2em  35em,
-    -1em  35em,
-    4em   35em,
-    5em   35em,
-    /* row 37 */
-    -1em  36em,
-    0     36em,
-    1em   36em,
-    2em   36em,
-    3em   36em,
-    4em   36em,
-    /* row 38 */
-    0     37em,
-    1em   37em,
-    2em   37em,
-    3em   37em;
-}
-}
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-</style>
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-<body>
-<div id="shim"></div>
-<div id="content">
-	<div class="construction"></div>
-	<div class="logo_box">
-	</div>          
-	<div class="main_box">
-		<h2>Our website is coming soon.<br/><span>In the mean time connect with us with the information below</span></h2>
-		
-		<ul class="info">
-			<li>
-				<h3>P</h3>
-				<p><label class="contact">016 - 2155 314</label>Sean<br/><label class="contact">011 - 2808 0084</label>Wayne</p>
-			</li>
-			<li>
-				<h3>E</h3>
-				<p>sean.william.chin@tessert.com.my<br/>wayne.lim@tessert.com.my</p>
-			</li>
-			<li>
-				<h3>A</h3>
-				<p class="social">
-					We rain you with love through our delectable cheesecakes and cakes imaginable!<br/>
-					We primarily supply baked goods to cafés, restaurants and other businesses.<br/>
-					Kindly contact us for more information!
-				</p>
-			</li>
-			<li>
-				<h3 style="visibility:hidden">P</h3>
-				<p>
-					<i>P.S. We don't bite ;)</i>
-				</p>
-			</li>
-		</ul>
-	</div>
-</div>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/tessert1.png" height="40px" width="85px"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Our Products</a>
+                    </li>
+					 <li>
+                       <a class="page-scroll" href="#contact">Contact Us</a>
+                    </li>
+                    <!--<li>
+                       <a class="page-scroll" href="/website/shop/shop.html">Cake Shop</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img src="img/tessert.png">
+				<!--<h2>YUM YUM YUM! </h2>-->
+                <p></p>
+                <!--<p>Om nom nom nom nom nom</p>-->
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+				<!--<a href="#portfolio" class="btn btn-secondary btn-xl page-scroll">Shop for a Cake</a>-->
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">ABOUT TESSERT</h2>
+                    <hr class="light">
+                    <p class="text-faded">Tessert produces and sells premium handcrafted cheesecakes and various baked goods directly to wholesalers, retail outlets and individual end consumers.</p>
+					<p class="text-faded">All our desserts are freshly baked using high quality ingredients, without any bulking agents and preservatives. We believed that desserts baked with love,
+					care and affection would make the best kind of desserts – undeniably, it would taste significantly better compared to commercial products that most often have no soul.</p>
+					<p class="text-faded">The key person behind Tessert is Teresa – a mother of three that refuses to give anything less than the best for her children. For the past decade, She has
+					 been baking avidly for her children with no intention of getting into business. Words about her delicious cakes soon then spread, and in 2013, she secured her first opportunity
+					 that was presented to her to provide cakes to retail outlets. </p>
+					<p class="text-faded">Today, Tessert has served many happy customers, and it is still growing, where her motherly love can be experienced by others through her cakes.
+</p>
+                  <!--  <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-birthday-cake wow bounceIn text-primary"></i>
+                        <h3>Taste & Quality</h3>
+                        <p class="text-muted">Exceptional Taste & High Quality Ingredients!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-cart-plus wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Affordable & Reasonable Pricing</h3>
+                        <p class="text-muted"> Prices</p>
+						<p>&nbsp</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-search wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Meticulous Attention to details</h3>
+                        <p class="text-muted">Meticulous Attention to details</p>
+						<p>&nbsp</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">Made with Love</p>
+						<p>&nbsp</p>
+                    </div>
+				</div>
+				<div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-star wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Friendly Customer Service</h3>
+                        <p class="text-muted">Friendly Customer Service</p>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-rocket wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>On time delivery</h3>
+                        <p class="text-muted">On time delivery, EVERYTIME!</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                       <!-- <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <!-- <div class="portfolio-box-caption">
+                           <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                       <!-- <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                      <!--  <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                       <!-- <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <!--<div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>-->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+       <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Click here to download our full menu!</h2>
+                <a href="Product-Copy.pdf" class="btn btn-default btn-xl wow tada">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                    <hr class="primary">
+                    <p>Looking for wonderful desserts for your business or an upcoming event? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>016-215-5314</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">sean.william@tessert.com.my</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
+
 </html>
