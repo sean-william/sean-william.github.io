@@ -271,7 +271,8 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
+    width: 650px;
+    height: 350px;
 
 }
 
