@@ -202,6 +202,11 @@ header .header-content {
     text-align: center;
 }
 
+header .header-content .header-content-inner > img {
+  width: 100%;
+  max-width: 572px;
+}
+
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -271,9 +276,7 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    width: 650px;
-    height: 350px;
-
+    width: 100%;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -326,6 +329,18 @@ header .header-content .header-content-inner p {
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1199px) {
+  #portfolio .row.no-gutter .col-lg-4:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+@media(min-width:1200px) {
+    #portfolio .row.no-gutter .col-lg-4:nth-child(3n+1) {
+      clear: left;
     }
 }
 
